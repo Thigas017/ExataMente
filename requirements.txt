@@ -1,0 +1,7 @@
+langgraph
+langchain
+langchain-google-genai
+sympy
+python-dotenv
+streamlit
+PyPDF2
