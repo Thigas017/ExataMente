@@ -20,9 +20,8 @@ from src.agents import (
     tutor_agent
 )
 
-# ============================================================================
+
 # 1. DEFINIR O ESTADO COMPARTILHADO
-# ============================================================================
 
 class MathState(TypedDict):
     """Estado que flui através de todos os agentes"""
@@ -35,9 +34,8 @@ class MathState(TypedDict):
     explicacao: str                        # Output do Tutor
 
 
-# ============================================================================
 # 2. DEFINIR OS NOS DO GRAFO (DELEGAM PARA OS AGENTES)
-# ============================================================================
+
 
 def node_orquestrador(state: MathState):
     """No que chama o agente Orquestrador"""
@@ -64,9 +62,9 @@ def node_tutor(state: MathState):
     return tutor_agent.execute(state)
 
 
-# ============================================================================
+
 # 3. CONSTRUIR O GRAFO
-# ============================================================================
+
 
 workflow = StateGraph(MathState)
 

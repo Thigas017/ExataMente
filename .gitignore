@@ -22,7 +22,6 @@ ENV/
 *.swo
 
 # Environment / secrets
-.env
 .env.*
 !.env.example
 .streamlit/secrets.toml

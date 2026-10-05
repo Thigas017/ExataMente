@@ -6,6 +6,13 @@ import os
 from io import BytesIO
 from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+from main import app_graph
+
 from main import app_graph  # Importa o grafo atualizado
 
 # ==========================================
